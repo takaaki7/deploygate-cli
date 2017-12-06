@@ -3,7 +3,7 @@ module DeployGate
     module Ios
       WORK_DIR_EXTNAME = '.xcworkspace'
       PROJECT_DIR_EXTNAME = '.xcodeproj'
-      IGNORE_DIRS = [ '.git', 'Carthage' ]
+      IGNORE_DIRS = [ '.git', 'Carthage', 'Carthage Cache' ]
 
       class NotSupportExportMethodError < DeployGate::NotIssueError
       end
